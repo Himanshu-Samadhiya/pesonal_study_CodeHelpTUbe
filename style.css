@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+header h1{
+    color: #03dac6;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00bcd4;
+    padding: 6px 12px;
+    border: 1px solid #00bcd4;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+/* Section Headings */
+section h2  {
+    color: #03dac6;
+    margin: 20px 0 10px;
+}
+
+/* Paragraphs */
+section p {
+    margin-bottom: 20px;
+}
+
+/* Tables and Media */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-spacing: 15px;
+}
+
+iframe, video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    iframe, video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
